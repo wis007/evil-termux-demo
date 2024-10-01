@@ -45,7 +45,7 @@ function App() {
     <header className='underline py-2 sm:p-4' id='intro'>
     <h1 className='text-2xl sm:text-4xl font-bold'>Les commandes <span className='uppercase text-cyan-500 '>Termux</span>, dangereuses ?</h1>
     </header>
-    <main className='py-4 text-wrap'>
+    <main className='py-4 text-wrap max-w-full'>
       <p>
         De nos jours la liste des tutos disponibles sur Internet est énorme et en me baladant dans certains tutos, quelle ne fut pas ma surprise de constater des scripts plutôt douteux parmis lesquels certain destinés au vol de données sensibles et dont je préfère faire taire le nom.<br />Alors j'ai decidé de mettre en place un petit site qui héberge quelques code de démonstration.<br />Bien sur chacun de ces codes sont conçus à destination de professionnels qui s'y connaissent et sauront comment s'en servir pour faire des démonstrations dans des environnements virtuels, autorisés,... bref contrôler.
       </p>
@@ -56,7 +56,7 @@ function App() {
         <form className='flex flex-col pb-2 justify-around items-center uppercase text-xl sm:flex-row gap-2' onSubmit={generate}>
           <label htmlFor="choix">Choix :</label>
           <select name="choix" id='choix' className='bg-inherit text-red-400 border p-2 rounded-lg w-full sm:w-auto' onChange={generate}>
-          <option value="" disabled selected className='text-xl'>Sélectionnez une charge :</option>
+          <option value="" disabled selected className='text-xl w-full sm:w-auto'>Sélectionnez une charge :</option>
             <option value="1" className='sm:text-xl text-black '>Données Whatsapp</option>
             <option value="2" className='sm:text-xl text-black '>Toutes les images</option>
             <option value="3" className='sm:text-xl text-black '>Toutes les video</option>
@@ -64,7 +64,7 @@ function App() {
           </select>
           <input className='border m-2 p-2 rounded-lg hover:cursor-pointer text-cyan-400 font-bold w-full sm:w-auto' type="submit" value="Recuperer" />
         </form>
-        <div className='bg-gray-200 p-1 rounded text-black font-mono sm:text-2xl max-w-full break-words' id="resultat">
+        <div className='bg-gray-200 p-1 rounded text-black font-mono sm:text-2xl max-w-full break-all overflow-scroll' id="resultat">
           Veillez selectionner une valeur puis cliquer sur recuperer
         </div>
       </fieldset>
