@@ -45,7 +45,7 @@ function App() {
     <header className='underline p-2 sm:p-4' id='intro'>
     <h1 className='text-2xl sm:text-4xl font-bold'>Les commandes <span className='uppercase text-cyan-500 '>Termux</span>, dangereuses ?</h1>
     </header>
-    <main className='py-4 overflow-auto'>
+    <main className='py-4 overflow-hidden'>
       <p>
         De nos jours la liste des tutos disponibles sur Internet est énorme et en me baladant dans certains tutos, quelle ne fut pas ma surprise de constater des scripts plutôt douteux parmis lesquels certain destinés au vol de données sensibles et dont je préfère faire taire le nom.<br />Alors j'ai decidé de mettre en place un petit site qui héberge quelques code de démonstration.<br />Bien sur chacun de ces codes sont conçus à destination de professionnels qui s'y connaissent et sauront comment s'en servir pour faire des démonstrations dans des environnements virtuels, autorisés,... bref contrôler.
       </p>
